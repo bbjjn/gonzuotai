@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server-v2.js",
     "refresh": "node scripts/refresh-data.js",
-    "test": "node --check server-v2.js && node --check scripts/refresh-data.js"
+    "test": "node --check server-v2.js && node --check scripts/refresh-data.js && node --check worker/index.mjs"
   },
   "keywords": [],
   "author": "",

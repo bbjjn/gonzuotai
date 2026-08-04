@@ -1,0 +1,14 @@
+name = "gonzuotai"
+main = "worker/index.mjs"
+compatibility_date = "2026-08-04"
+workers_dev = true
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[triggers]
+crons = ["*/15 * * * *"]
+
+[vars]
+FUND_SNAPSHOT_DATE = "2026-08-03"

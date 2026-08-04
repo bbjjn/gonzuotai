@@ -38,6 +38,20 @@ BINANCE_SECRET_KEY=
 - `GET /api/live-data`
 - `POST /api/refresh`
 
+## Cloudflare Workers（推荐免费部署）
+
+Workers 与页面同域部署，提供固定 HTTPS 地址；Cron Trigger 每 15 分钟刷新公开行情，页面每 3 分钟检查数据版本。无需常驻服务器，也不会因无访问休眠。
+
+```bash
+npm install
+npx wrangler login
+npx wrangler secret put BINANCE_API_KEY
+npx wrangler secret put BINANCE_SECRET_KEY
+npx wrangler deploy
+```
+
+Cloudflare 免费计划可用。BIT API 的 IP 白名单在 Workers 动态出口下无法保证固定；因此 Worker 默认不读取 BIT 账户。若 BIT 提供不限制 IP 的只读密钥或可配置固定出口，才能再安全启用该部分。
+
 ## 安全
 
 `.env` 与 `data/keys.json` 已加入 `.gitignore`。密钥只在托管平台的环境变量设置中配置，不能提交到仓库。
