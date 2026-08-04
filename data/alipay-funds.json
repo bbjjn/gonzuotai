@@ -1,0 +1,40 @@
+{
+  "snapshotDate": "2026-08-03",
+  "source": "支付宝基金",
+  "notes": "三只纳斯达克100指数基金，每日定投，红利再投",
+  "funds": [
+    {
+      "code": "270042",
+      "name": "广发纳斯达克100ETF联接人民币(QDII)A",
+      "shortName": "广发纳斯达克100",
+      "dailyAmount": 5,
+      "shares": 0.6411,
+      "costPerShare": 7.7989,
+      "currency": "CNY",
+      "category": "QDII-股票指数",
+      "dividend": "红利再投"
+    },
+    {
+      "code": "040046",
+      "name": "华安纳斯达克100ETF联接(QDII)A",
+      "shortName": "华安纳斯达克100",
+      "dailyAmount": 10,
+      "shares": 1.2736,
+      "costPerShare": 7.8518,
+      "currency": "CNY",
+      "category": "QDII-股票指数",
+      "dividend": "红利再投"
+    },
+    {
+      "code": "019174",
+      "name": "摩根纳斯达克100指数(QDII)美元现汇A",
+      "shortName": "摩根纳斯达克100",
+      "dailyAmount": 10,
+      "shares": 5.6660,
+      "costPerShare": 1.7649,
+      "currency": "CNY",
+      "category": "QDII-股票指数",
+      "dividend": "红利再投"
+    }
+  ]
+}

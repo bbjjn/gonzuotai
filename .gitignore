@@ -1,0 +1,17 @@
+node_modules/
+.env
+data/keys.json
+assets/live-data.json
+data/alipay-funds-live.json
+scripts/.bit-ip-cache
+.workbuddy/
+deploy-final/
+deploy-mobile/
+tunnel-url.txt
+tunnel.js
+update-deploy.js
+*.log
+cloudflared.exe
+bore.exe
+bore.zip
+published-check.html
