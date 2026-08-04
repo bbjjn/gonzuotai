@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: gonzuotai
+    runtime: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/status
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 22.22.2
+      - key: BIT_ACCESS_KEY
+        sync: false
+      - key: BIT_SECRET_KEY
+        sync: false
+      - key: BINANCE_API_KEY
+        sync: false
+      - key: BINANCE_SECRET_KEY
+        sync: false
